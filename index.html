@@ -7,33 +7,81 @@
     <meta name="viewport" content="width=device-width initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
-    <link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
-    <link rel="stylesheet" type="text/css" href="css/owl.theme.css">
-    <link rel="stylesheet" type="text/css" href="css/owl.transitions.css">
     <link rel="stylesheet" type="text/css" href="css/2-pages/rwd/responsive.css">
   </head>
   <body>
-  <div class="grid grid-12">
+  <!-- selektory zad 2-->
+  <section class="wrapper">
+    <h2>Selektory w jQuery</h2>
+    <div class="grid grid-12"></div>
+    <div class="grid grid-12">
+      <nav>
+        <ul>
+          <li><a href="http://eduweb.pl/">Eduweb</a></li>
+          <li><a href="http://www.wp.pl/">WP</a></li>
+          <li><a href="http://www.onet.pl/">Onet</a></li>
+          <li><a href="http://www.interia.pl/">Interia</a></li>
+        </ul>
+      </nav>
+    </div>
+    <br/>
+    <div class="grid grid-12">
+      <form class="" action="index.html" method="post">
+        <input type="text" name="name" value="" placeholder="Imie i naziwsko"><br/>
+        <input type="email" name="name" value="" placeholder="email"><br/>
+        <textarea name="name" rows="8" cols="40" placeholder="tresc"></textarea><br/>
+        <br/>
+        <input type="checkbox" name="name" value=""><br/>
+        <input type="radio" checked="checked" name="name" value=""><br/>
+        <input type="checkbox" checked="checked" name="name" value=""><br/>
+        <input type="radio"  name="name" value="">
+      </form>
+    </div>
+    <br/>
+    <br/>
+    <div id="text">
+      <p>      </p>
+      <p>      </p>
+      <p>      </p>
+      <p>      </p>
+    </div>
+    <div class="pagination">
+      <span><p class="pagination-item"></p></span>
+      <p class="pagination-item"></p>
+      <span><p class="pagination-item"></p></span>
+      <p class="pagination-item"></p>
+      <span><p class="pagination-item"></p></span>
+      <p class="pagination-item"></p>
+    </div>
+  </section>
+  <!---->
+  <!-- hamburder menu zad 3 -->
+  <section class="menucontainer wrapper">
+    <h2>Pokazywanie elementów i animacje</h2>
+    <div id="hamburgermenu">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
     <nav>
-      <li><a href="http://eduweb.pl/">Eduweb</a></li>
-      <li><a href="http://www.wp.pl/">WP</a></li>
-      <li><a href="http://www.onet.pl/">Onet</a></li>
-      <li><a href="http://www.interia.pl/">Interia</a></li>
+      <ul class="menu__list">
+        <li class="menu__list--item"><a href="#">First item</a></li>
+        <li class="menu__list--item"><a href="#">Second item</a></li>
+        <li class="menu__list--item"><a href="#">Third item</a></li>
+        <li class="menu__list--item"><a href="#">Fourth item</a></li>
+        <li class="menu__list--item"><a href="#">Fith item</a></li>
+        <li class="menu__list--item menu__list--lastitem"><a href="#">Sixth item</a></li>
+      </ul>
     </nav>
-  </div>
-  <form class="" action="index.html" method="post">
-    <input type="text" name="name" value="">
-    <input type="email" name="name" value="">
-    <textarea name="name" rows="8" cols="40"></textarea>
-    <input type="checkbox" name="name" value="">
-    <input type="checkbox" checked="checked" name="name" value="">
-  </form>
-  <div id="text">
-    <p>
+  </section>
+  <!---->
+  <!-- hamburder menu zad 4 -->
+  <section class="wrapper">
+      <h2>Dynamiczne tworzenie elementów</h2>
+  </section>
 
-    </p>
-  </div>
-  
+  <!---->
     <script type="text/javascript" src="js/jquery-1.12.1.min.js"></script>
     <script type="text/javascript" src="js/scripts.js"></script>
   </body>

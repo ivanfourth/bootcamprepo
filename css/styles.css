@@ -472,8 +472,10 @@ template {
 }
 
 .inputColor {
+  margin-left: 60px;
   width: 100px;
   height: 100px;
+  background: green;
 }
 
 .emptyPColor {

@@ -15,8 +15,8 @@
   background: red;
 }
 .inputColor {
-  width: 150px;
-  height: 150px;
+  width: 100px;
+  height: 100px;
 }
 .emptyPColor{
   width: 500px;
@@ -125,4 +125,21 @@
   left: 50%;
 }
 /**/
+/*Zadanie 5 dodanie jednego elementu*/
+#nameField {
+  width: 300px;
+  height: 50px;
+  text-indent: 10px;
+  font-size: 16px;
+  font-weight: 700;
+  border:1px solid #000;
+}
+.error {
+  border:5px solid red;
+}
+/**/
+/*Praca z AJAX i JSON*/
+.ajaxjson {
+  margin: 50px auto 45px auto;
+}
 /**/

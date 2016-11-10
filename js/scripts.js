@@ -18,16 +18,17 @@ $('#hamburgermenu').click(function(){
 
 //Dynamiczne dodawanie
 
-$("#dodajElement").on("click",function(){
-  var element = $("input[name=element]").val();
-  if( element == "")
-      {
-          alert("Pole input jest puste");
-      }else{
-          $("#dynamicsection > ul").append("<li>"+element+"</li>");
-          $("input[name=element]").val("");
+$("#addName").on("click",function(){
+  var nameField = $("#nameField").val();
+      if(nameField == "")
+        {
+          alert("Nie podałeś żadnego imienia");
+          $("#nameField").css("border" , "5px solid red");
+        }else{
+          $(".dynamicsection > ul").append("<li>"+nameField+"</li>");
+          $("#nameField").removeAttr("style");
+          $("#nameField").val("");
       }
-
 });
 
 //Ajax i JSON
@@ -37,14 +38,14 @@ $("button").on("click",function(){
       $.ajax({
         url: "https://jsonplaceholder.typicode.com/users",
      }).done(function( data ) {
-      console.log(data.length);
         for(var i = 0; i<data.length; i++)
       {
         $(".menu__data ul").append("<li><b>Name:</b> "+data[i].name+" <b>Username:</b> "+data[i].username+" <b>Email:</b> "+data[i].email+" <b>Phone:</b> "+data[i].phone+"</li>");
       }
-      });
 
-  });
+      });
+      button.prop("disabled", true);
+    });
 
 
 

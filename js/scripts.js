@@ -19,15 +19,15 @@ $('#hamburgermenu').click(function(){
 //Dynamiczne dodawanie
 
 $("#addName").on("click",function(){
-  var nameField = $("#nameField").val();
-      if(nameField == "")
+  var nameField = $('#nameField').val();
+      if(nameField.length === 0)
         {
           alert("Nie podałeś żadnego imienia");
           $("#nameField").css("border" , "5px solid red");
-        }else{
-          $(".dynamicsection > ul").append("<li>"+nameField+"</li>");
+        }
+        else{
+          $("ul.list").append("<li>" +nameField+ "</li>");
           $("#nameField").removeAttr("style");
-          $("#nameField").val("");
       }
 });
 
